@@ -156,13 +156,13 @@ li a {
 }
 
 .content-left {
-  width: 65%;
-  margin-left: 2.5rem;
+  width: 60%;
+  margin-left: 3.5rem;
 }
 
 .content-right {
-  width: 25%;
-  margin-right: 2.5rem;
+  width: 23%;
+  margin-right: 3.5rem;
 
 /* background-color: red; */
 }
@@ -348,7 +348,7 @@ input[type="radio"] {
 
 .blogheader {
   margin-bottom: 0;
-  padding-left: 1rem;
+  padding-left: 10%;
 }
 
 .blog-image {
@@ -414,7 +414,7 @@ input[type="radio"] {
 }
 
 .card-container {
-	width: 95%;
+	width: 90%;
 	max-width: auto;
 	padding: 1rem;
 	margin: 0 auto;
@@ -424,19 +424,34 @@ input[type="radio"] {
   /* border: 1px solid red; */
 }
 
-/* .dogcard {
+.card-container-sm {
+	width: 80%;
+	max-width: auto;
+	padding: 1rem;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.2rem;
+  /* border: 1px solid red; */
+}
 
-} */
+.dogcard {
+}
 
 .card {
 	height: fit-content;
-  img: width 100%;
 	width: 31%; /* mobile first width: 100%;  */
 	display: flex;
 	align-items: flex-start;
 	/* justify-content: initial; */
   margin: 0;
-  outline: 1px solid lightgray;
+  outline: 1px solid darkgray;
+}
+
+.dogcard > img {
+width: 114%;
+margin-left: -7%;
+margin-top: -8%;
 }
 
 .dog-image {
@@ -473,7 +488,13 @@ input[type="radio"] {
 	align-items: flex-start;
 	/* justify-content: initial; */
   margin: 0;
-  outline: 1px solid lightgray;
+  outline: 1px solid darkgray;
+}
+
+.dogcard-sm > img {
+width: 114%;
+margin-left: -7%;
+margin-top: -8%;
 }
 
 .card-sm > div {

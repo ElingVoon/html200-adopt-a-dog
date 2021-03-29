@@ -23,6 +23,7 @@ $('.card').mouseover(function() {
 
 $('.card-sm').mouseover(function() {
   $(this).addClass('dog-image');
+  $(this).addClass('dog-image');
   $('.card-sm').mouseout(function() {
     $(this).removeClass('dog-image');
   });
