@@ -137,29 +137,32 @@ ul {
   margin-top: 0px;
 }
 
+/* important - keeps the links in oneline  */
 li {
   display: inline-block;
-
 }
 
 li a {
   color: #29465b;
   text-decoration: none;
+  font-weight: bold;
 }
 
-.nav-slash {
-  padding: 0px 10px;
-  font-weight: lighter;
+/* add slash after nav menu items */
+.nav-slash a::before {
+  content: "/";
+  margin-right: 15px;
+  font-weight: normal;
 }
 
 .content-left {
   width: 65%;
+  margin-left: 2.5rem;
 }
 
 .content-right {
-  width: 30%;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  width: 25%;
+  margin-right: 2.5rem;
 
 /* background-color: red; */
 }
@@ -411,17 +414,23 @@ input[type="radio"] {
 }
 
 .card-container {
-	width: 100%;
+	width: 95%;
 	max-width: auto;
 	padding: 1rem;
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 1rem;
+	gap: 1.2rem;
+  /* border: 1px solid red; */
 }
+
+/* .dogcard {
+
+} */
 
 .card {
 	height: fit-content;
+  img: width 100%;
 	width: 31%; /* mobile first width: 100%;  */
 	display: flex;
 	align-items: flex-start;
@@ -492,23 +501,26 @@ input[type="radio"] {
 
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
-	.card {
-		width: 100%;
-	}
 
-  .card-sm {
-    	width: 100%;
+  .content-left {
+    width: 90%;
+    margin: 0 auto;
   }
 
   .content-right {
     display: none;
   }
 
-  .content-left {
-    width: 95%;
+	.card {
+		width: 95%;
+	}
+
+  .card-sm {
+    width: 90%;
+    margin: 0 auto;
   }
 
-  .blog {
+  .blog-container {
     flex-direction: column;
   }
 
