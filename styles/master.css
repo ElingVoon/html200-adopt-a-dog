@@ -151,7 +151,8 @@ li a {
 /* add slash after nav menu items */
 .nav-slash a::before {
   content: "/";
-  margin-right: 15px;
+  margin-right: 12px;
+  margin-left: 10px;
   font-weight: normal;
 }
 
@@ -590,7 +591,7 @@ margin-top: -8%;
   margin-top: 2rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  vertical-align: middle;
+  text-align: center;
 }
 
 .footer-logo {
@@ -599,18 +600,14 @@ margin-top: -8%;
 }
 
 .copyright {
-  /* clear: both; */
-  text-align: center;
   color: #FFF;
   font-size: .7rem;
 }
 
 .nav-footer {
-  text-align: center;
   font-size: .70rem;
   font-weight: bold;
-  padding: .2rem 0 0 0; /* vertical-align list */
-
+  /* padding: .2rem 0 0 0; /* vertical-align list */ */
   color: #fff;
 }
 
@@ -623,7 +620,11 @@ margin-top: -8%;
   text-decoration: none;
 }
 
-.nav-slash {
-  padding: 0px 10px;
+.footer-nav-slash a::before  {
+  content: "/";
+  margin-right: 12px;
+  margin-left: 10px;
   font-weight: lighter;
+  color: white;
+  text-decoration: none;
 }

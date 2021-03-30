@@ -2,14 +2,14 @@
 const blogs = [
 	{
 		headline:"Traveling With Your Dog",
-		text: "Iduciendisite quo magnatem iuntum quid quaest ea am, is dolenem quidustrum fuga.",
+		text: "Iduciendisite quo magnatem iuntum quid quaest ea am, is dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis.",
 		image: "./images/blog-1.jpg",
 		alt: "a person is walking four dogs on leashes"
 	},
 
 	{
 		headline: "How To Walk Multiple Dog",
-		text: "Iduciendisite quo magnatem iuntum quid quaest ea am, dolenem quidustrum fuga.",
+		text: "Iduciendisite quo magnatem iuntum quid quaest ea am, dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis.",
 		image: "./images/blog-2.jpg",
 		alt: "a person is walking four dogs on leashes"
 	},
