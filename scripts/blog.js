@@ -22,7 +22,7 @@ const blogs = [
 	},
 ];
 
-const blogsContainer = document.getElementById('blogs-container');
+const blogsContainer = document.getElementById('blogContainer');
 console.log(blogsContainer);
 
 for (let i = 0; i < blogs.length; i++) {
