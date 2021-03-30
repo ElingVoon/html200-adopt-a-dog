@@ -29,51 +29,16 @@ for (let i = 0; i < blogs.length; i++) {
 	const blog = blogs[i];
 
 	const dogArticle = document.createElement('article');
-	dogArticle.setAttribute('class', 'blog-article');
 
-		const dogImage = document.createElement('img');
-		dogImage.setAttribute('src', blog.image);
-		dogImage.setAttribute('alt', blog.alt);
-		dogImage.setAttribute('class', 'blog-image');
+	const template = `
+	<img src=${blog.image} alt=${blog.alt}>
+	<div>
+		<h2 class="margintop">${blog.headline}</h2>
+		<p>${blog.text}</p>
+	</div>
+	`;
 
+	dogArticle.innerHTML = template;
 
-		console.log(dogImage);
-
-		dogArticle.appendChild(dogImage);
-
-		blogsContainer.appendChild(dogArticle);
-
-		const textBox = document.createElement('div');
-		textBox.setAttribute('class', 'blogheader');
-		dogArticle.appendChild(textBox);
-
-		const headline = document.createElement('h2');
-		headline.setAttribute('class', 'margintop');
-		headline.textContent = blog.headline;
-		textBox.appendChild(headline);
-
-		const text = document.createElement('p');
-		text.setAttribute('class', 'p');
-		text.textContent = blog.text;
-		textBox.appendChild(text);
-
-		blogsContainer.appendChild(dogArticle);
-		}
-
-		// // <div>
-		// 		<h2 class="margintop">Traveling With Your Dog</h2>
-		// 		<p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga.
-		// // </div>
-
-// <img class="blog-image" src="images/blog-1.jpg"  alt="a woman holding a dog facing the grand canyon">
-
-	// console.log(dogArticle);
-	// const blog = blogs[i];
-// console.log(blog.headline);
-
-
-
-// console.log(blogs);
-// for (let i = 0; i < blogs.length; i++) {
-// console.log(blogs[i]);
-// }
+	blogsContainer.appendChild(dogArticle);
+}
